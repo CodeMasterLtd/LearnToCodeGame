@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://codemaster.ltd/cdn/shop/files/codemaster_1.jpg?v=1719057471&width=140" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <title id="title"></title>
+</head>
+<body>
+    <header>
+        <img src="https://codemaster.ltd/cdn/shop/files/codemaster_1.jpg?v=1719057471&width=140" alt="CodeMaster Logo" class="logo">
+        <h1>Learn to Code Game</h1>
+        <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+    </header>
+    <div class="container">
+        <h2>Welcome, Novice Coder!</h2>
+        
+        <div class="game-area">
+            <!-- HTML Challenge -->
+            <div class="challenge">
+                <h3>HTML Basics</h3>
+                <p>Create a simple webpage with headings, paragraphs, and a link.</p>
+                <textarea class="html" id="html-editor" rows="15" cols="89">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Code Master</title>
+</head>
+<body>
+    <img src="https://codemaster.ltd/cdn/shop/files/codemaster_1.jpg?v=1719057471&width=140" alt="CodeMaster Logo">
+    <h1>Hello, Code Master!</h1>
+    <p>Learn To Code</p>
+    <a>Enjoy - Create - Learn - Save</a>
+</body>
+</html>
+                </textarea>
+                <br>
+                <button class="previewBtn" onclick="checkHTML()">Preview</button>
+                <button class="save" onclick="saveHTML()">Save HTML</button>
+                <p id="html-feedback"></p>
+            </div>
+            
+            <!-- CSS Challenge -->
+            <div class="challenge">
+                <h3>CSS Styling</h3>
+                <p>Style the webpage to achieve a specific layout and color scheme.</p>
+                <textarea class="css" id="css-editor" rows="19" cols="89">
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 140px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 15%;
+    box-shadow: #000 0 0 20px;
+}
+                </textarea>
+                <br>
+                <button class="previewBtn" onclick="checkCSS()">Preview</button>
+                <button class="save" onclick="saveCSS()">Save CSS</button>
+                <p id="css-feedback"></p>
+            </div>
+            
+            <!-- Preview Area -->
+            <div id="preview-container" class="preview-container" style="display: none;">
+                <h3>Preview Area</h3>
+                <iframe id="preview-frame" class="preview" frameborder="0"></iframe>
+            </div>
+        </div>
+        <p class="author"><a href="http://www.codemaster.ltd/" id="author"></a></p>
+        <p id="version" class="version"></p>
+        
+    </div>
+    <footer>
+        &copy; 2024 CodeMaster. All rights reserved.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
